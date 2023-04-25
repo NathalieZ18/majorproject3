@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* things i used in order to style the grid and put it into place */
+.wrapper {
+	width: 40%;
+	margin: 40px auto;
+}
+
+div.gallery {
+	margin-top: 30px;
+}
+
+div.gallery ul {
+	list-style-type: none;
+	margin-left: 35px;
+}
+
+/* animation */
+div.gallery ul li, div.gallery li img {
+	-webkit-transition: all 0.1s ease-in-out;
+  	-moz-transition: all 0.1s ease-in-out;
+  	-o-transition: all 0.1s ease-in-out;
+  	transition: all 0.1s ease-in-out;
+}
+
+div.gallery ul li {
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 130px;
+	margin: 5px;
+	padding: 25px;
+	z-index: 0;
+}
+
+div.gallery ul li:hover {
+	z-index: 5;
+}
+
+/* image is position nicely under li */
+div.gallery ul li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 1px solid #ffffff;
+	padding: 5px;
+	width: 130px;
+	height: 130px;
+	background: #f0f0f0;
+}
+
+div.gallery ul li img:hover {
+	width: 200px;
+	height: 200px;
+	margin-top: -130px;
+	margin-left: -130px;
+	top: 65%;
+	left: 65%;
+}
+
+
+/* responsive hack */
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
+	.wrapper {
+		width: 500px;
+	}
+}
+
+@media only screen and (max-width: 498px) {
+	.wrapper {
+		width: 300px;
+	}
+
+	div.gallery ul {
+		list-style-type: none;
+		margin: 0;
+	}
+}
+
+
+/* imported multiple fonts to use */
+@font-face {
+  font-family: 'rakoon';
+  src: url(fonts/Rakoon_PersonalUse.ttf);
+}
+
+@font-face {
+  font-family: 'cocktail';
+  src: url(fonts/CocktailShakerRegular.otf);
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url(fonts/FuturaBold.otf);
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url(fonts/GothamBold.otf);
+}
+
+@font-face {
+font-family: 'allura';
+src: url(fonts/Allura-Regular.ttf);
+}
+
+
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 50px;
+  color: #000000;
+}
+
+/* attempted to change the styling of the font as well as its display */
+.p1 {
+  font-family: 'gotham';
+  text-align: left;
+  color:rgb(255, 255, 255);
+  margin: 10px 20px 50px 60px;
+  line-height: 30px;
+}
+
+.p2 {
+  font-family: 'gotham';
+  color:rgb(255, 255, 255);
+  margin: 10px 20px 30px 20px;
+  line-height: 30px;
+
+}
+
+.p3 {
+  font-family: 'gotham';
+  color:rgb(255, 255, 255);
+  margin: 10px 20px 50px 600px;
+  line-height: 30px;
+  text-align: right;
+}
+
+.p4 {
+  font-family: 'gotham';
+  color:rgb(255, 255, 255);
+  margin: 10px 20px 30px 20px;
+  line-height: 30px;
+}
+
+/* created a top navigation bar with different clickable tabs */
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  text-align: center;
+  font-family: 'gotham';
+}
+
+.topnav a {
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: rgb(238, 217, 112);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(238, 217, 112);
+  color: rgb(255, 255, 255);
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+
+  <a class="active" href="#home">Home</a>
+  <a href="#gateway">About</a>
+  <a href="#portal">Portfolio</a>
+</div>
+
+<div style="padding-center:20px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+</div>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+</style>
+<body>
+
+ 
+
+</body>
+</html>
